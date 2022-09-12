@@ -2,6 +2,7 @@ import apple from "./apple";
 import art from "./art";
 import backpack from "./backpack";
 import bag from "./bag";
+import books from "./books";
 import branch from "./branch";
 import briefcase from "./briefcase";
 import burger from "./burger";
@@ -32,6 +33,7 @@ const info = {
   art,
   backpack,
   bag,
+  books,
   branch,
   briefcase,
   burger,
