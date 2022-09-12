@@ -56,7 +56,6 @@ const App: React.FC = () => {
 
   const steps = [
     { name: "start", component: StartScreen },
-    { name: "basic-info", component: BasicInfo },
     { name: "configure", component: Configurator },
     { name: "stats", component: Stats },
     { name: "end", component: EndScreen },
