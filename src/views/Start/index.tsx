@@ -26,8 +26,8 @@ const StartScreen = () => {
   };
 
   const paragraphs = [
-    "It is the year 2021. Hustlers and hackers roam the Earth. Your time is now, adventurer.",
-    "Design and equip your 16bit character to survive the wilds of the startup ecosystem. Choose your look, your accessories, and your skills and download your avatar.",
+    "It is the year 2022. Science is at a turning point. Your time is now, adventurer.",
+    "Design and equip your 16bit character to build the new world with Covidence. Choose your look, your accessories, and your skills and download your avatar.",
   ];
 
   const getWords = (paragraph: string) =>
