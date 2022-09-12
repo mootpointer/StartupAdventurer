@@ -83,9 +83,9 @@ const IdleScreen = ({ onExit = noop }) => {
       >
         <CharacterRandomizer running={isRunning} />
         <LogoContainer id="idle-logo-container">
-          <Title id="idle-title">Create your own</Title>
+          <Title id="idle-title">Get ready for...</Title>
           <Logo />
-          <Quide id="idle-quide">Touch the screen to start your adventure</Quide>
+          <Quide id="idle-quide">Press any key to start your adventure</Quide>
         </LogoContainer>
       </IdleScreenContainer>
     </IdleScreenWrapper>
