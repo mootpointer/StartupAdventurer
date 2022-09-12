@@ -1,7 +1,6 @@
 import Logo from "@/components/Logo";
 import Stepper from "@/components/Stepper";
 import { IStoreState } from "@/interfaces/IStoreState";
-import BasicInfo from "@/views/BasicInfo";
 import Configurator from "@/views/Configurator";
 import EndScreen from "@/views/EndScreen/index";
 import GameOver from "@/views/GameOver";
