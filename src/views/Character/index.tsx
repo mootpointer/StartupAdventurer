@@ -46,9 +46,9 @@ const CharacterDisplay = () => {
 
         // restore stats
         for (const { level, name, category } of stats) {
-          dispatch(statsActions.addStat({ name, category }));
+          dispatch(statsActions.addStat({ name }));
           for (let i = 0; i < level; i++) {
-            dispatch(statsActions.addStatPoint({ category, name, level }));
+            dispatch(statsActions.addStatPoint({ name, level }));
           }
         }
 

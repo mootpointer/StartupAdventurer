@@ -11,10 +11,10 @@ const DistributePoints = () => {
 		<StatsPanel className="stats-panel-distribute">
 			<Title>Distribute {totalStatPoints} points</Title>
 			<Grading>
-				{gradedStats.map(({ name, category, level }, index: number) => (
+				{gradedStats.map(({ name, level }, index: number) => (
 					<StatGrader
-						key={name + category + index}
-						stat={{ name, category, level }}
+						key={name  + index}
+						stat={{ name, level }}
 						canIncrease={!!statPointsAvailable}
 					/>
 				))}

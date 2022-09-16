@@ -1,6 +1,6 @@
 export interface IStat {
-	category: string;
 	name: string;
+	badge?: string;
 }
 
 export interface IGradedStat extends IStat {

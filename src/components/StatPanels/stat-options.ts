@@ -1,85 +1,92 @@
-const statOptions = [
+import { IStat } from "@/interfaces/IStats";
+const statOptions: IStat[] = [
 	{
-		category: "Classic",
-		icon: "lightning-bolt-icon",
-		options: ["Charisma", "Constitution", "Dexterity", "Intelligence", "Perception", "Speed", "Strength", "Wisdom"],
+		name: "Complexity Busting",
+		badge: "complexity-busting"
 	},
 	{
-		category: "Industries",
-		icon: "briefcase-icon",
-		options: ["Fintech", "HealthTech", "InfoSec", "Proptech", "Retail"],
+		name: "Creative Thinking",
+		badge: "creative-thinking"
 	},
 	{
-		category: "Startup Skills",
-		icon: "lightbulb-icon",
-		options: [
-			"Architecture",
-			"Bootstrapping",
-			"Business Development",
-			"Business Operations",
-			"Data Analysis",
-			"DevOps",
-			"Finances",
-			"Investor Relations",
-			"Marketing",
-			"Machine Learning",
-			"Networking",
-			"Passion",
-			"Patience",
-			"Product",
-			"Purpose",
-			"Resilience",
-			"Sales",
-			"Security",
-			"Shipping",
-			"Strategy",
-		],
+		name: "Cultural Compass",
+		badge: "cultural-compass"
 	},
 	{
-		category: "Technology",
-		icon: "floppy-icon",
-		options: [
-			".NET",
-			"Azure",
-			"C",
-			"C#",
-			"C++",
-			"Clojure",
-			"Containers",
-			"Debian",
-			"Docker",
-			"Elixir",
-			"Erlang",
-			"F#",
-			"Golang",
-			"Java",
-			"JavaScript",
-			"Kafka",
-			"Kubernetes",
-			"Linux",
-			"NodeJS",
-			"PHP",
-			"Python",
-			"Rails",
-			"React",
-			"Ruby",
-			"Rust",
-			"Scala",
-			"Serverless",
-			"Tensorflow",
-			"Ubuntu",
-			"Vue",
-			"Windows",
-		],
+		name: "Decisiveness",
+		badge: "decisiveness"
 	},
+	{
+		name: "Empathy",
+		badge: "empathy"
+	},
+	{
+		name: "Energy",
+		badge: "energy"
+	},
+	{
+		name: "Evangelising",
+		badge: "evangelising"
+	},
+	{
+		name: "Experimentation",
+		badge: "experimentation"
+	},
+	{
+		name: "Gap Detection",
+		badge: "gap-detection"
+	},
+	{
+		name: "Grit",
+		badge: "grit"
+	},
+	{
+		name: "Harmonizing",
+		badge: "harmonizing"
+	},
+	{
+		name: "Ingenuity",
+		badge: "ingenuity"
+	},
+	{
+		name: "Motivation",
+		badge: "motivation"
+	},
+	{
+		name: "Negotiating",
+		badge: "negotiating"
+	},
+	{
+		name: "Pattern Matching",
+		badge: "pattern-matching"
+	},
+	{
+		name: "Peacemaking",
+		badge: "peacemaking"
+	},
+	{
+		name: "Problem Solving",
+		badge: "problem-solving"
+	},
+	{
+		name: "Provocation",
+		badge: "provocation"
+	},
+	{
+		name: "Recalibration",
+		badge: "recalibration"
+	},
+	{
+		name: "Systems Thinking",
+		badge: "systems-thinking"
+	},
+	{
+		name: "Vision",
+		badge: "vision"
+	},
+	
 ];
 
-export const resolveIcon = (category: string): string => {
-	try {
-		return statOptions.filter(opt => opt && opt.category === category)[0].icon;
-	} catch (e) {
-		return "";
-	}
-};
+export const resolveIcon = (category: string): string => "";
 
 export default statOptions;

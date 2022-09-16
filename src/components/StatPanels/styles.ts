@@ -143,6 +143,8 @@ export const OptionList = styled.div`
 	max-height: 1210px;
 	overflow-y: auto;
 	width: 1306px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 
 	--scrollbar-width: 40px;
 	--scrollbar-padding: 30px;
@@ -181,20 +183,19 @@ interface IOptionProps {
 }
 
 export const Option = styled.button<IOptionProps>`
+	box-sizing: border-box;
+	display: block;
 	align-items: center;
 	background-color: ${props => (props.selected ? colors.lightGrey : colors.white)};
 	border-color: transparent;
-	border-bottom: 7px solid ${colors.grey};
-	display: flex;
+	border: 7px solid ${colors.grey};
 	font-size: 50px;
 	margin: 0;
 	opacity: ${props => (props.disabled ? 0.5 : 1)};
 	outline: 0;
-	padding: 64px 50px 63px;
 	pointer-events: ${props => (props.disabled ? "none" : "auto")};
-	text-align: left;
-	width: 100%;
-
+	height: 450px;
+	
 	&:active {
 		background-color: ${colors.lightGrey};
 	}
@@ -211,6 +212,16 @@ export const Option = styled.button<IOptionProps>`
 		svg {
 			width: 100%;
 		}
+	}
+
+	.badge {
+		height: 256px;
+		width: 256px;
+		margin: auto;
+	}
+	.badge svg {
+		height: 100%;
+		width: 100%;
 	}
 
 	${props =>

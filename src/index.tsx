@@ -10,7 +10,7 @@ import { IStoreState } from "@/interfaces/IStoreState";
 import { UserInfoContextProvider } from "@aaronpowell/react-static-web-apps-auth";
 
 const composeEnhancers =
-  (process.env.NODE_ENV !== "production" && (window.top as any)["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"]) || compose;
+  ((window as any)["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"]) || compose;
 
 const store: Store<IStoreState> = createStore(reducers(), composeEnhancers());
 
