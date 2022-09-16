@@ -39,7 +39,7 @@ const StatGrader = ({ stat, canIncrease = false, ...rest }: IProps) => {
 	}
 	return (
 		<GraderContainer {...rest}>
-			<SkillIcon className={clsx("skill-icon", className)}>{stat.badge}</SkillIcon>
+			<SkillIcon className={clsx("skill-icon", className)}>{getBadge()}</SkillIcon>
 			<SkillName>{stat && stat.name}</SkillName>
 			<Points>{stat && stat.level}</Points>
 			<GradingButtons>

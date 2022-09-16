@@ -45,10 +45,10 @@ const CharacterDisplay = () => {
         dispatch(infoActions.setCompanySize(companyInfo.companySize));
 
         // restore stats
-        for (const { level, name, category } of stats) {
-          dispatch(statsActions.addStat({ name }));
+        for (const { level, name, badge } of stats) {
+          dispatch(statsActions.addStat({ name, badge }));
           for (let i = 0; i < level; i++) {
-            dispatch(statsActions.addStatPoint({ name, level }));
+            dispatch(statsActions.addStatPoint({ name, level, badge }));
           }
         }
 

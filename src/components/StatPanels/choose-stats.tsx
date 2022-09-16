@@ -1,6 +1,6 @@
 import React, { Fragment, useRef } from "react";
 import { StatsPanel, Title, OptionList, Option } from "./styles";
-import TabSwitcher, { Tab, TabPanel } from "@/components/TabSwitcher";
+import { Tab,} from "@/components/TabSwitcher";
 import get from "lodash-es/get";
 import statOptions from "./stat-options";
 import useTabIndicator from "@/hooks/use-tab-indicator";
@@ -8,7 +8,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { IStoreState } from "@/interfaces/IStoreState";
 import { Dispatch } from "redux";
 import { statsActions } from "@/redux/stats";
-import clsx from "clsx";
 import Checkmark from "./checkmark";
 import EvaluateArrow from "./evaluate-arrow";
 import badges from "@/components/CharacterOptions/badges";
