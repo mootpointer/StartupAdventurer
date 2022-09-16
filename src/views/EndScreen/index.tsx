@@ -200,6 +200,7 @@ const EndScreen = () => {
                 <QRCodeContainer>
                   <img src={`https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=${qrUrl}&choe=UTF-8`} alt="QR" />
                 </QRCodeContainer>
+                <input value={qrUrl} />
               </PublicUrl>
             </>
           )}
